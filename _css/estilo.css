@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @font-face {
-    font-family: 'Buble';
-    src: url("../_fonts/bubblegum-sans-regular.otf");
+    font-family: 'Roboto';
+    src: url("../_fonts/Roboto-Regular.ttf");
 }
 
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto';
     background-color: #dddddd;
     color: rgba(0, 0, 0, 1);
 }
@@ -40,17 +40,18 @@ header#cabecalho {
     justify-content: center;
     height: 200px;
     background-color: #ff9034;
-    align-items: center;
+    align-items: stretch;
 }
 
 header#cabecalho img#symboratrans {
     position: absolute;
     width: 432px;
     height: 432px;
+    align-self: center;
 }
 
 header#cabecalho h1 {
-    font-family: 'Buble';
+    font-family: 'Roboto';
     font-size: 30pt;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
@@ -75,66 +76,66 @@ header#cabecalho h2 {
 
  
 nav#menu {
-    position: absolute;
+      
     margin-top: 245px;
     height: 45px;
     background-color: rgb(255, 194, 153);
-    width: 1271px; 
-    align-content: center;
+    width: auto;
+    
 }
 
 nav#menu ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: top;
+    justify-content: center;
+    align-items: baseline;
     list-style: none;
     text-transform: uppercase;
-    padding: 0px;
 }
 
 nav#menu li {
-    height: fit-content;
-    align-content: top;
-    padding: 0px;
-    margin: 0px;
-    color: black;
-    font-family: sans-serif;
+    height: 100%;
+    margin: 0px 25px 0px 25px;
+    text-align: center;
+    font-family: 'Roboto';
     font-weight: bold;
-    transition: background-color 1s;
+    transition: text-decoration 1s;
+    padding: 0px 10px 10px 10px;
 }
 
-nav#menu li#mat {
-    
-}
-
+/* 
 nav#menu li:hover {
-    background-color: rgb(255, 215, 188);
-}
+     border-bottom-width: 2px;
+    border-bottom-style: solid;  
+    padding-bottom: 3px; 
+     
+
+} */
 
 nav#menu h1 {
     display: none;
 }
 
 nav#menu a {
-    color: black;
+    color: rgba(0, 0, 0, 0.9);
     text-decoration: none;
     font-size: 11pt;
+    padding: 0px 30px 2px 30px;
 }
 
 nav#menu a:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid rgb(40, 100, 255);
 }
 
 /* Formatação das Seções */
 
 section#corpo {
     display: block;
-    width: 800px;
+    width: 700px;
     float: left;
     border-right: 2px solid #606060;
     padding: 20px;
-    margin-top: 100px;
+    margin: 100px 5px 0px 100px;
 }
 
 article#noticia-principal h2 {
@@ -143,6 +144,10 @@ article#noticia-principal h2 {
     background-color: #dddddd; 
     padding: 5px 0px 5px 10px;
     margin: 10px 0px 10px 0px;
+}
+
+article#noticia-principal img#carna {
+    width: 100%;
 }
 
 header#cabecalho-artigo h1 {
@@ -256,11 +261,12 @@ table#tabelaspec caption span {
 
 aside#lateral {
     display: block;
-    width: 200px;
+    width: 380px;
     float: right;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    margin: 10px 12px auto 10px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    margin-top: 100px;
+    margin-right: 10px; 
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -284,7 +290,7 @@ footer#rodape {
     border-top: #cccccc 1px solid;
     height: 350px;
     background-color: rgba(0, 0, 0, 0.8);
-    font-family: sans-serif;
+    font-family: 'Roboto';
     color: white;
     margin-bottom: 5px;
     align-content: center;
@@ -296,20 +302,18 @@ footer#rodape div.linediv {
     justify-content: center;
     border-top: 3px solid white;
     align-items: center;
-    margin-left: 80px;
+    margin-left: 150px;
     margin-top: 40px;
     
 }
 
 footer#rodape p {
     text-align: center;
+    font-weight: bold;
     
 }
 
-footer#rodape img {
-    width: 30px;
-    height: 30px;
-}
+
 
 
 footer#rodape img#logoface {
@@ -318,12 +322,15 @@ footer#rodape img#logoface {
 }
 
 table#tablerodape {
-    margin: 50px 40px 10px 240px;
+    margin: -150px 40px 10px 330px;
     width: 700px;
     border-spacing: 15px;
-    text-align: left;
+    
 }
 
+table#tablerodape th {
+    text-align: left;
+}
 
 table#tablerodape td {
     margin-top: 20px;
@@ -331,8 +338,8 @@ table#tablerodape td {
 }
 
 footer#rodape img#footerlogo {
-    position: absolute;
-    margin-top: 0px;    
+    position: relative;
+    margin-top: -30px;    
     width: 216px;
     height: 216px;
 }
