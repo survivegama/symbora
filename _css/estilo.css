@@ -1,0 +1,372 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+    font-family: 'Buble';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dddddd;
+    color: rgba(0, 0, 0, 1);
+}
+
+div#interface {
+    width: inherit;
+    background-color: #ffffff;
+    margin: 0px auto 0px auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 40px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header#cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    background-color: #ff9034;
+    align-items: center;
+}
+
+header#cabecalho img#symboratrans {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+}
+
+header#cabecalho h1 {
+    font-family: 'Buble';
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+}
+
+
+/* Formatação do Menu */
+
+ 
+nav#menu {
+    position: absolute;
+    margin-top: 245px;
+    height: 45px;
+    background-color: rgb(255, 194, 153);
+    width: 1271px; 
+    align-content: center;
+}
+
+nav#menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0px;
+}
+
+nav#menu li {
+    height: fit-content;
+    align-content: top;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: background-color 1s;
+}
+
+nav#menu li#mat {
+    
+}
+
+nav#menu li:hover {
+    background-color: rgb(255, 215, 188);
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+nav#menu a:hover {
+    text-decoration: underline;
+}
+
+/* Formatação das Seções */
+
+section#corpo {
+    display: block;
+    width: 800px;
+    float: left;
+    border-right: 2px solid #606060;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+article#noticia-principal h2 {
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd; 
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: 'Buble';
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 2px;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: white;
+    margin-top: 2px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 14px;
+    color: #606060;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+/* Formatação para Fotos com Legenda */
+
+figure.foto-legenda {
+    position: relative;
+    border: px solid black;
+    box-shadow: 1px 1px 4px white;
+    
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+} 
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(ff, 90, 34, 0.2) ;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+figure.linkedin-twitter img {
+    width: 35px;
+    width: 35px;
+    
+}
+
+figure.linkedin-twitter {
+    text-align: center;
+}
+
+.direita {
+    text-align: right;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    font-weight: bolder;
+    text-align: right;
+}
+
+table#tabelaspec td.cd {
+    background-color: #cecece;
+    
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 15pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 9pt;
+    margin-top: 10px;
+}
+
+aside#lateral {
+    display: block;
+    width: 200px;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px 12px auto 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+aside#lateral h1{
+    font-family: 'Buble';
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 2px;
+    
+}
+
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+} 
+
+footer#rodape {
+    clear: both;
+    border-top: #cccccc 1px solid;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: sans-serif;
+    color: white;
+    margin-bottom: 5px;
+    align-content: center;
+}
+
+footer#rodape div.linediv {
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    border-top: 3px solid white;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 40px;
+    
+}
+
+footer#rodape p {
+    text-align: center;
+    
+}
+
+footer#rodape img {
+    width: 30px;
+    height: 30px;
+}
+
+
+footer#rodape img#logoface {
+    width: 40px;
+    height: 30px;
+}
+
+table#tablerodape {
+    margin: 50px 40px 10px 240px;
+    width: 700px;
+    border-spacing: 15px;
+    text-align: left;
+}
+
+
+table#tablerodape td {
+    margin-top: 20px;
+    vertical-align: top;
+}
+
+footer#rodape img#footerlogo {
+    position: absolute;
+    margin-top: 0px;    
+    width: 216px;
+    height: 216px;
+}
+/*
+table#tablerodape td.i {
+    color: #ffffff;
+    background-color: #606060;
+    font-weight: bolder;
+    text-align: right;
+}*/
+
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 15pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 9pt;
+    margin-top: 10px;
+}
+
+video#vid01 {
+    display: block;
+    margin: auto;
+    width: 500px;
+}
+
+video#vid02 {
+    display: block;
+    margin: auto;
+    width: 400px;
+} 
