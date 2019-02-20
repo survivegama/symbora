@@ -129,7 +129,7 @@ nav#menu a:hover {
     flex-wrap: wrap;
 }
 
- img#carn {
+aside#lateral img#carn {
     max-width: 90%;
     height: auto;
 }
