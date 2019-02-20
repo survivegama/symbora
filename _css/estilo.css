@@ -83,7 +83,7 @@ header#top_bar h1 {
 header#cabecalho {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-aroundIlustração de carnaval;
     height: 300px;
     background-color: white;
 }
@@ -181,6 +181,11 @@ aside#lateral img#carn {
     height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    transition: all 0.2s ease-in;
+}
+
+img#carn:hover {
+    -webkit-transform: scale(0.95);
 }
 
 
@@ -277,6 +282,7 @@ header#cabecalho-artigo h3 {
 figure.foto-legenda {
     position: relative;
     padding: 0px;
+    text-align: left;
 }
 
 figure.foto-legenda h1 {
@@ -284,8 +290,8 @@ figure.foto-legenda h1 {
     font-size: 16pt;
     font-weight: bold;
     flex-wrap: wrap;
-    text-align: left;
-    padding-top: 10px; 
+    padding-top: 10px;
+    color:white; 
 }
 
 
