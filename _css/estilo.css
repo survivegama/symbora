@@ -199,7 +199,7 @@ article#noticia-principal img#carna {
     transition: all 0.2s ease-in;
 }
 
-article#noticia-principal img:hover {
+.banner img:hover {
     -webkit-transform: scale(1.05);
 }
 
@@ -210,6 +210,7 @@ article#noticia-principal img:hover {
     height: auto;
     padding: 1%;
     align-items: center;
+    
 }
 
 .banner p {
@@ -275,13 +276,33 @@ header#cabecalho-artigo h3 {
 
 figure.foto-legenda {
     position: relative;
-    height: fit-content;
-    border: 1px solid black;
+    padding: 0px;
+}
+
+figure.foto-legenda h1 {
+    font-family: 'Roboto';
+    font-size: 16pt;
+    font-weight: bold;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-top: 10px; 
+}
+
+
+figure.foto-legenda p {
+    font-family: 'Roboto';
+    font-size: 14pt;
+    font-weight: bold;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-top: 0px; 
 }
 
 figure.foto-legenda img {
     max-width: 100%;
     height: auto;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
 }
 
 figure.foto-legenda figcaption {
@@ -293,7 +314,6 @@ figure.foto-legenda figcaption {
     color: white;
     width: 100%;
     height: fit-content;
-    padding: 10px;
     box-sizing: border-box;
     transition: opacity 1s;
 
@@ -302,6 +322,21 @@ figure.foto-legenda figcaption {
 figure.foto-legenda:hover figcaption {
     opacity: 1;
 }
+
+.last {
+    margin: -50px 40px 20px 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.last p {
+    margin-bottom: 60px;
+}
+
+.baixar {
+    background-color: green;
+}
+
 
 figure.linkedin-twitter img {
     width: 35px;
@@ -375,13 +410,6 @@ footer#rodape img#footerlogo {
     width: 216px;
     height: 216px;
 }
-/*
-table#tablerodape td.i {
-    color: #ffffff;
-    background-color: #606060;
-    font-weight: bolder;
-    text-align: right;
-}*/
 
 
 table#tabelaspec caption {
@@ -398,14 +426,3 @@ table#tabelaspec caption span {
     margin-top: 10px;
 }
 
-video#vid01 {
-    display: block;
-    margin: auto;
-    width: 500px;
-}
-
-video#vid02 {
-    display: block;
-    margin: auto;
-    width: 400px;
-}
