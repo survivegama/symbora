@@ -193,9 +193,9 @@ article#noticia-principal h2 {
 }
 
 article#noticia-principal img#carna {
-    max-width: 100%;
-    height: auto;
-    flex: 0 1 100%;
+    width: 100%;
+    height: 50%;
+    flex: 0 0 15%;
     transition: all 0.2s ease-in;
 }
 
