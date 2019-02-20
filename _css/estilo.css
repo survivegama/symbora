@@ -42,6 +42,41 @@ p {
     flex-direction: line;
     align-items: center;
     margin: 30px 10px 10px 10px;
+
+header#top_bar {
+    background-color: #545454;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
+    align-items: center;
+}
+
+header#top_bar h1 {
+    float: left;
+    margin-right: 30px;
+    font-family: 'Roboto';
+    font-size: 10pt;
+    color: #FFFFFF;
+    margin-left: 20px;
+    /* margin-right: 350px;
+    align-self: flex-end; */
+}
+
+.button_top_bar {
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: #FF9033;
+    border-width: medium;
+    color: #FF9033;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+    font-size: 15px;
+    font-style: bold
+    color: #FF9033;
+    margin: 10px 2px;
+    cursor: pointer;
+    font-family:'Roboto'
 }
 
 header#cabecalho {
