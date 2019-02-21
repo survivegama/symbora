@@ -12,9 +12,26 @@
 </head>
 
 <script src="_javascript/funcoes.js"></script>
-<script src="_javascript/funcoes.js"></script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134747090-1"></script>
+
+
+<!--modal e firebase-->
+
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<!-- <script src="https://cdn.firebase.com/js/client/2.0.6/firebase.js"></script> -->
+ <script type="text/javascript" src="blog.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="./_css/modal.css">
+<script src="./_javascript/modal.js"></script>
+<!-- fim modal e firebase-->
+
+
+
+
 <script>
  window.dataLayer = window.dataLayer || [];
  function gtag(){dataLayer.push(arguments);}
@@ -82,7 +99,9 @@
 
       <div class="last">
         <p style="font-size: 18pt;font-weight: bold; padding-top: 2px; color: rgba(0, 0, 0, 0.7)"> Nós da  <span style="font-weight: bolder; font-family: 'rimouski'; font-size: 20pt; color: #ff9034"> Symbora</span> estamos a serviço <b style="font-weight: bolder;font-family: 'rimouski'; color: #ff9034">SEU!</b> Melhorando a sua vida na hora de produzir ou encontrar aquele evento que tanto deseja. Aqui a informação chega a você em primeira mão! Sem demora, sem drama e sem dor de cabeça!  </p>
-        <a href="../Downloads/Cronograma-Carnaval-BH-2019.pdf" download="Cronograma-de-Carnaval-BH-2019"> <button class="baixar" style="width:500px;border-radius: 15px; height: 80px;font-size: 18pt">BAIXE AQUI O CRONOGRAMA...</button></a>
+        
+        <div id="contact"><button class="baixar" style="width:500px;border-radius: 15px; height: 80px;font-size: 18pt">BAIXE AQUI O CRONOGRAMA...</button></div>
+
     </div>
 
     </article>
@@ -129,3 +148,34 @@
   </footer>
 </body>
 </html>
+
+
+
+
+
+<div id="contactForm">
+  <h3>Preencha com seus dados de contato para enviarmos o material para você</h3>
+     
+      <div class="flex wrapper">                  
+          <form method="post" class="formulario" action="" id="myform" onsubmit="writeDetails(); return false;">
+             <div class="form-group">
+                <label><b>Name:</b></label><br>
+                <input type="text" id="nombre" class="formulario" name="nombre" value="" placeholder="Seu Nome.."required>
+             </div>
+             <div class="form-group">
+                <label><b>E-mail:</b></label><br>
+                <input type="email" id="email" name="mail" value="" placeholder="Seu E-mail.." required>
+            </div>   
+            <div class="form-group margin1">
+
+                <label><b>Tipo de Email</b></label><br>
+
+                <select  id="empresa" name="empresa" >
+                        <option value="B2B">Organizador</option>
+                        <option value="B2C">Participante</option>                                  
+                </select>  
+                <br>                 
+            </div>                      
+                <input type="submit" class="formulario btn btn-primary btn-lg color margin1" value="Baixar Mateirial">
+          </form>    
+</div>
