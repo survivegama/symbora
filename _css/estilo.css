@@ -8,6 +8,12 @@
     src: ("../_fonts/rimouskisb.ttf");
 }
 
+header {
+    display: flex;
+    justify-content: stretch;
+    width: inherit;
+    
+}
 
 body {
     font-family: 'Roboto';
@@ -87,16 +93,16 @@ header#top_bar h1 {
 
 header#cabecalho {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     height: 300px;
+    width: auto;
     background-color: white;
 }
 
 header#cabecalho img#header-2 {
 
     width: 648px;
-    height: 648px;
+
     align-self: center;
 }
 
@@ -117,10 +123,9 @@ header#cabecalho img#header-3 {
 
 nav#menu {
     display: flex;
-
     height: 120px;
     background-color: #FF9034;
-    justify-content: stretch;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -131,6 +136,7 @@ nav#menu ul{
 }
 
 nav#menu li {
+    border: 1px solid black;
     height: 100%;
     text-align: center;
     justify-content: space-between;
