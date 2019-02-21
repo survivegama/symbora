@@ -2,31 +2,67 @@
 
 /* Style Definitions */
 p.MsoNormal, li.MsoNormal, div.MsoNormal
-{margin-right:30px;
-margin-left: 30px;
+{margin-right:40px;
+margin-left: 40px;
 margin-bottom:.0001pt;
-line-height:100%;
-font-size:14.0pt;
+line-height:140%;
+font-size:16.0pt;
 font-family:'Roboto';
 text-align: justify;
 color: rgba(0, 0, 0, 0.7);
 }
 
-h1#titulo {
-  margin-top:16.0pt;
-  margin-right:0cm;
-  margin-bottom:20px;
-  margin-left:30px;
-  line-height:115%;
-  page-break-after:avoid;
-  font-size:24.0pt;
-  font-family: 'Roboto';
-  font-weight: bolder;
-  color: rgba(0, 0, 0, 0.9);
+a:hover {
+  text-decoration: none;
 }
 
+.gif {
+  width: 50%;
+  height: auto;
+  margin-left: 25%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
 
-h2.sub
+figcaption#bateria {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 91%;
+  margin: 1% 0% 0% -20%;
+}
+
+figcaption#bateria p {
+  font-family: 'Roboto';
+  font-size: 20pt;
+  left: 0px;
+  font-weight: bold;
+  padding-top: 0%;
+  color: rgba(0, 0, 0, 0.7);
+  padding-left: 4%; 
+}
+
+figcaption#bateria h1 {
+  font-family: 'Roboto';
+  font-size: 20pt;
+  padding-left: 5%;
+  font-weight: bold;
+  padding-top: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+h1#titulo {
+  margin-top:16.0pt;
+  margin-right:0px;
+  margin-bottom:20px;
+  margin-left:40px;
+  line-height:115%;
+  page-break-after:avoid;
+  font-size:28.0pt;
+  font-family: 'Roboto' ;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+h2
 {margin-top:18.0pt;
 margin-right:0cm;
 margin-bottom:6.0pt;
@@ -35,91 +71,7 @@ line-height:115%;
 page-break-after:avoid;
 font-size:40.0pt;
 background-color: white;
+color: rgba(0, 0, 0, 0.8);
 font-family:"Roboto";
 font-weight:bold;
 }
-h3
-{margin-top:16.0pt;
-margin-right:0cm;
-margin-bottom:4.0pt;
-margin-left:0cm;
-line-height:115%;
-page-break-after:avoid;
-font-size:14.0pt;
-font-family:"Arial","sans-serif";
-color:#434343;
-font-weight:normal;}
-h4
-{margin-top:14.0pt;
-margin-right:0cm;
-margin-bottom:4.0pt;
-margin-left:0cm;
-line-height:115%;
-page-break-after:avoid;
-font-size:12.0pt;
-font-family:"Arial","sans-serif";
-color:#666666;
-font-weight:normal;}
-h5
-{margin-top:12.0pt;
-margin-right:0cm;
-margin-bottom:4.0pt;
-margin-left:0cm;
-line-height:115%;
-page-break-after:avoid;
-font-size:11.0pt;
-font-family:"Arial","sans-serif";
-color:#666666;
-font-weight:normal;}
-h6
-{margin-top:12.0pt;
-margin-right:0cm;
-margin-bottom:4.0pt;
-margin-left:0cm;
-line-height:115%;
-page-break-after:avoid;
-font-size:11.0pt;
-font-family:"Arial","sans-serif";
-color:#666666;
-font-weight:normal;
-font-style:italic;}
-p.MsoTitle, li.MsoTitle, div.MsoTitle
-{margin-top:0cm;
-margin-right:0cm;
-margin-bottom:3.0pt;
-margin-left:0cm;
-line-height:115%;
-page-break-after:avoid;
-font-size:26.0pt;
-font-family:"Arial","sans-serif";}
-p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
-{margin-top:0cm;
-margin-right:0cm;
-margin-bottom:16.0pt;
-margin-left:0cm;
-line-height:115%;
-page-break-after:avoid;
-font-size:15.0pt;
-font-family:"Arial","sans-serif";
-color:#666666;}
-.MsoChpDefault
-{font-family:"Arial","sans-serif";}
-.MsoPapDefault
-{line-height:115%;}
-@page WordSection1
-{size:595.45pt 841.7pt;
-margin:72.0pt 72.0pt 72.0pt 72.0pt;}
-div.WordSection1
-{page:WordSection1;
-
-}
-/* List Definitions */
-ol
-{margin-bottom:0cm;}
-ul
-{margin-bottom:0cm;}
-
-
-
-
-
