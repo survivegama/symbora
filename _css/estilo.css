@@ -458,3 +458,7 @@ table#tabelaspec caption span {
     margin-top: 10px;
 }
 
+.white{
+    color:white;
+    text-decoration: none;
+}

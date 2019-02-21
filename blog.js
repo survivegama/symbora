@@ -59,6 +59,9 @@ function writeDetails() {
     firebase.database().ref('details/' + detailsId).set(detalles); // guardar los detalles con el id generado
 
     console.log("Guardado");
+    window.open("./downloads/CronogramaCarnaval.pdf", "minhaJanela", "height=200,width=200");
+alert('Obrigado por baixar nosso conteúdo!')
+
 } 
 
 
