@@ -142,6 +142,7 @@ nav#menu a {
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
     font-size: 13pt;
+    font-weight: bold;
     margin: 0px 40px 0px 40px;
     padding: 0px 20px 3px 20px;
 }
@@ -307,7 +308,7 @@ figure.foto-legenda h1 {
     font-size: 16pt;
     right: 0px;
     font-weight: bold;
-    padding-top: 10px;
+    padding-top: 30px;
     padding-left: 80px;
     color:white; 
 }
@@ -324,6 +325,7 @@ figure.foto-legenda p {
 figure.foto-legenda img {
     max-width: 100%;
     height: auto;
+    margin-top: 30px;
     padding-bottom: 0%;
     margin-bottom: 0%;
 }
@@ -346,17 +348,18 @@ figure.foto-legenda:hover figcaption {
 }
 
 .last {
-    margin: -50px 40px 20px 40px;
+    margin: -40px 40px 15px 40px;
     padding: 20px;
     text-align: center;
 }
 
 .last p {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .baixar {
     background-color: green;
+    margin-bottom: 20px;
 }
 
 
