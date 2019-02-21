@@ -65,6 +65,14 @@ function writeDetails() {
 } 
 
 
+
+
+
+
+
+
+
+
 /*
 firebase.database().ref('details').on('value', function(snapshot) {
 
