@@ -376,13 +376,20 @@ figure.linkedin-twitter {
 footer#rodape {
     clear: both;
     border-top: #cccccc 1px solid;
-    height: 350px;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.8);
     font-family: 'Roboto';
     color: white;
     margin-bottom: 5px;
     align-content: center;
 }
+
+footer#rodape a {
+    color: white;
+    text-decoration: none;
+}
+
+
 
 footer#rodape div.linediv {
     display: flex;
@@ -391,7 +398,7 @@ footer#rodape div.linediv {
     border-top: 3px solid white;
     align-items: center;
     margin-left: 150px;
-    margin-top: 40px;
+    margin-top: 80px;
 
 }
 
@@ -420,7 +427,8 @@ table#tablerodape {
 }
 
 table#tablerodape th {
-    text-align: left;
+    text-align: center;
+    width: auto;
 }
 
 table#tablerodape td {
