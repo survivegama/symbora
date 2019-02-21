@@ -2,11 +2,11 @@
 
 /* Style Definitions */
 p.MsoNormal, li.MsoNormal, div.MsoNormal
-{margin-right:30px;
-margin-left: 30px;
+{margin-right:40px;
+margin-left: 40px;
 margin-bottom:.0001pt;
-line-height:100%;
-font-size:14.0pt;
+line-height:140%;
+font-size:16.0pt;
 font-family:'Roboto';
 text-align: justify;
 color: rgba(0, 0, 0, 0.7);
@@ -14,15 +14,15 @@ color: rgba(0, 0, 0, 0.7);
 
 h1#titulo {
   margin-top:16.0pt;
-  margin-right:0cm;
+  margin-right:0px;
   margin-bottom:20px;
-  margin-left:30px;
+  margin-left:40px;
   line-height:115%;
   page-break-after:avoid;
-  font-size:24.0pt;
-  font-family: 'Roboto';
+  font-size:28.0pt;
+  font-family: 'Roboto' ;
   font-weight: bolder;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 
