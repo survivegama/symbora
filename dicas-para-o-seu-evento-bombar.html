@@ -11,8 +11,26 @@
   <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
   <link rel="shortcut icon" href="_imagens/symbora-laranja.ico" type="image/x-icon" />
   <link rel="stylesheet" href="_css/blog.css">
-</head>
 
+
+
+
+</head>
+  
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <!-- <script src="https://cdn.firebase.com/js/client/2.0.6/firebase.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="blog.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!--modal-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 <script src="_javascript/funcoes.js"></script>
 
 <!-- -=-=-=-=-=-=-=-=-=-=-=- BODY -=-=-=-=-=-=-=-=-=-=- -->
@@ -295,6 +313,18 @@
           melhor. Falta pouco! E não se esqueça de aproveitar os closes para postar no
           seu Facebook, Instagram e onde mais quiser. <span lang=EN>Vamos divulgar!</span></p>
           
+
+          <div class="last" style="margin-top:20px;">
+          <a href="index.html"> <button class="baixar" style="width:500px; height: 80px;font-size: 22pt">BAIXE AQUI...</button></a>
+          
+          
+          <button type="button" class=" btn btn-primary  " data-toggle="modal" data-target="#myModal1">
+                      <b>BAIXAR MEU ARQUIVO</b>
+                    </button>
+          
+          </div>
+
+
           </div>
           
           </body>
@@ -375,3 +405,59 @@
 </body>
 </html>
 
+
+
+<!--INICIO MODAL 1-->
+<div class="container">  
+  
+    <!-- The Modal -->
+    <div class="modal" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Preencha com seus dados de contatos para Baixar o arquivo</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+
+              <div class="flex wrapper">
+                  <form method="post" class="formulario" action="" id="myform" onsubmit="writeDetails(); return false;">
+                   <div class="form-group">
+                      <label>Name:</label><br>
+                      <input type="text" id="nombre" class="formulario" name="nombre" value="" placeholder="Seu Nome.."required>
+                   </div>
+                   <div class="form-group">
+                      <label>E-mail:</label><br>
+                      <input type="email" id="email" name="mail" value="" placeholder="Seu E-mail.." required>
+                  </div>   
+                  <div class="form-group margin1">
+
+                      <label>Tipo de Email</label><br>
+
+                      <select  id="empresa" name="empresa" >
+                              <option value="B2B">Organizador</option>
+                              <option value="B2C">Participante</option>                                  
+                      </select> 
+                      
+                  </div>                      
+                      <input type="submit" class="formulario btn btn-primary btn-lg color margin1" value="Baixar Mateirial">
+                </form>
+             <div>
+          </div>
+          <!-- Modal footer -->
+          
+          
+        </div>
+      </div>
+      <div class="modal-footer">
+          <img src="./_imagens/Untitled 4.png">
+        </div>
+    </div>
+    
+  </div>
+
+  <!--fIM MODAL 1-->
