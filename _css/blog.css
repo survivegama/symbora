@@ -12,7 +12,7 @@ text-align: justify;
 color: rgba(0, 0, 0, 0.7);
 }
 
-a {
+a:hover {
   text-decoration: none;
 }
 
@@ -24,6 +24,30 @@ a {
   margin-top: 10px;
 }
 
+figcaption#bateria {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 91%;
+  margin: 1% 0% 0% -20%;
+}
+
+figcaption#bateria p {
+  font-family: 'Roboto';
+  font-size: 20pt;
+  left: 0px;
+  font-weight: bold;
+  padding-top: 0%;
+  color: rgba(0, 0, 0, 0.7);
+  padding-left: 4%; 
+}
+
+figcaption#bateria h1 {
+  font-family: 'Roboto';
+  font-size: 20pt;
+  padding-left: 5%;
+  font-weight: bold;
+  padding-top: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
 
 h1#titulo {
   margin-top:16.0pt;
@@ -38,7 +62,7 @@ h1#titulo {
   color: rgba(0, 0, 0, 0.6);
 }
 
-h2.sub
+h2
 {margin-top:18.0pt;
 margin-right:0cm;
 margin-bottom:6.0pt;
@@ -47,23 +71,7 @@ line-height:115%;
 page-break-after:avoid;
 font-size:40.0pt;
 background-color: white;
+color: rgba(0, 0, 0, 0.8);
 font-family:"Roboto";
 font-weight:bold;
 }
-
-
-
-@page WordSection1
-{size:595.45pt 841.7pt;
-margin:72.0pt 72.0pt 72.0pt 72.0pt;}
-
-/* List Definitions */
-ol
-{margin-bottom:0cm;}
-ul
-{margin-bottom:0cm;}
-
-
-
-
-

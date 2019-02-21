@@ -308,7 +308,7 @@ figure.foto-legenda h1 {
     right: 0px;
     font-weight: bold;
     padding-top: 10px;
-    padding-left: 100px;
+    padding-left: 80px;
     color:white; 
 }
 
@@ -333,7 +333,6 @@ figure.foto-legenda figcaption {
     position: absolute;
     top: 0px;
     left: 200px;
-    background-color: rgba(ff, 90, 34, 0.2) ;
     color: white;
     width: 100%;
     height: fit-content;
