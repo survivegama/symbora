@@ -12,7 +12,6 @@ header {
     display: flex;
     justify-content: stretch;
     width: inherit;
-    
 }
 
 body {
@@ -93,10 +92,16 @@ header#top_bar h1 {
 
 header#cabecalho {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 300px;
     width: auto;
     background-color: white;
+}
+
+header#cabecalho img#header-1 {
+    max-width: 25%;
+    height: auto;
+    align-self: flex-start;
 }
 
 header#cabecalho img#header-2 {
@@ -104,12 +109,6 @@ header#cabecalho img#header-2 {
     width: 648px;
 
     align-self: center;
-}
-
-header#cabecalho img#header-1 {
-    max-width: 25%;
-    height: auto;
-    align-self: flex-start;
 }
 
 header#cabecalho img#header-3 {
