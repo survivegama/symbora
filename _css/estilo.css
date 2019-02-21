@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @font-face {
     font-family: 'Roboto';
-    src: url("../_fonts/Roboto-Regular.ttf");
+    src: url("../_fonts/Roboto-Regular.ttf");}
+@font-face {
+    font-family: 'rimouski';
+    src: ("../_fonts/rimouskisb.ttf");
 }
 
 
@@ -45,23 +48,20 @@ p {
 }
 
 header#top_bar {
+    width: 100%;
     background-color: #545454;
     height: 50px;
     display: flex;
     justify-content: flex-end;
-    padding-right: 60px;
     align-items: center;
 }
 
 header#top_bar h1 {
-    float: left;
     margin-right: 30px;
     font-family: 'Roboto';
-    font-size: 10pt;
+    font-size: 12pt;
     color: #FFFFFF;
     margin-left: 20px;
-    /* margin-right: 350px;
-    align-self: flex-end; */
 }
 
 .button_top_bar {
@@ -70,20 +70,24 @@ header#top_bar h1 {
     border-color: #FF9033;
     border-width: medium;
     color: #FF9033;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 0px 5px 0px;
     text-align: center;
     font-size: 15px;
     font-style: bold;
-    color: #FF9033;
-    margin: 10px 2px;
+    margin: 2px 100px 2px 20px;
     cursor: pointer;
     font-family:'Roboto'
+}
+
+.button_top_bar:hover {
+    border-color: white;
+    color: white;
 }
 
 header#cabecalho {
     display: flex;
     flex-direction: row;
-    justify-content: space-aroundIlustração de carnaval;
+    justify-content: space-around;
     height: 300px;
     background-color: white;
 }
@@ -138,6 +142,7 @@ nav#menu a {
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
     font-size: 13pt;
+    font-weight: bold;
     margin: 0px 40px 0px 40px;
     padding: 0px 20px 3px 20px;
 }
@@ -163,11 +168,12 @@ nav#menu a:hover {
     flex: 0 0 15%;
     order: 2;
     margin-right: 1%;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     padding: 0px 5px 0px 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .rel {
@@ -177,8 +183,8 @@ nav#menu a:hover {
 }
 
 aside#lateral img#carn {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 21%;
     padding-top: 20px;
     padding-bottom: 20px;
     transition: all 0.2s ease-in;
@@ -199,10 +205,11 @@ article#noticia-principal h2 {
 
 article#noticia-principal img#carna {
     width: 100%;
-    height: 50%;
+    height: auto;
     flex: 0 0 15%;
     transition: all 0.2s ease-in;
 }
+
 
 .banner img:hover {
     -webkit-transform: scale(1.05);
@@ -215,7 +222,6 @@ article#noticia-principal img#carna {
     height: auto;
     padding: 1%;
     align-items: center;
-    
 }
 
 .banner p {
@@ -223,6 +229,17 @@ article#noticia-principal img#carna {
     color: rgba(0, 0, 0, 0.8);
     padding: 8%;
     text-align: justify;
+    text-indent: 0%;
+    font-size: 15pt;
+    margin-top: 0px;
+}
+
+p#ban1 {
+    margin-bottom: 0px;
+}
+
+p#ban2 {
+    margin-bottom: 5px;
 }
 
 button {
@@ -237,6 +254,7 @@ button {
     padding: auto 30px auto 30px;
     transition: 1s;
     border: 2px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
 button:hover {
@@ -288,9 +306,10 @@ figure.foto-legenda {
 figure.foto-legenda h1 {
     font-family: 'Roboto';
     font-size: 16pt;
+    right: 0px;
     font-weight: bold;
-    flex-wrap: wrap;
-    padding-top: 10px;
+    padding-top: 30px;
+    padding-left: 80px;
     color:white; 
 }
 
@@ -299,14 +318,14 @@ figure.foto-legenda p {
     font-family: 'Roboto';
     font-size: 14pt;
     font-weight: bold;
-    flex-wrap: wrap;
-    text-align: left;
     padding-top: 0px; 
+    padding-left: 100px;
 }
 
 figure.foto-legenda img {
     max-width: 100%;
     height: auto;
+    margin-top: 30px;
     padding-bottom: 0%;
     margin-bottom: 0%;
 }
@@ -316,7 +335,6 @@ figure.foto-legenda figcaption {
     position: absolute;
     top: 0px;
     left: 200px;
-    background-color: rgba(ff, 90, 34, 0.2) ;
     color: white;
     width: 100%;
     height: fit-content;
@@ -330,17 +348,18 @@ figure.foto-legenda:hover figcaption {
 }
 
 .last {
-    margin: -50px 40px 20px 40px;
+    margin: -40px 40px 15px 40px;
     padding: 20px;
     text-align: center;
 }
 
 .last p {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .baixar {
     background-color: green;
+    margin-bottom: 20px;
 }
 
 
@@ -358,13 +377,20 @@ figure.linkedin-twitter {
 footer#rodape {
     clear: both;
     border-top: #cccccc 1px solid;
-    height: 350px;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.8);
     font-family: 'Roboto';
     color: white;
     margin-bottom: 5px;
     align-content: center;
 }
+
+footer#rodape a {
+    color: white;
+    text-decoration: none;
+}
+
+
 
 footer#rodape div.linediv {
     display: flex;
@@ -373,7 +399,7 @@ footer#rodape div.linediv {
     border-top: 3px solid white;
     align-items: center;
     margin-left: 150px;
-    margin-top: 40px;
+    margin-top: 80px;
 
 }
 
@@ -402,7 +428,8 @@ table#tablerodape {
 }
 
 table#tablerodape th {
-    text-align: left;
+    text-align: center;
+    width: auto;
 }
 
 table#tablerodape td {
