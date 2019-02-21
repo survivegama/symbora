@@ -12,6 +12,7 @@ text-align: justify;
 color: rgba(0, 0, 0, 0.7);
 }
 
+
 a:hover {
   text-decoration: none;
 }
@@ -20,14 +21,18 @@ a:hover {
   width: 50%;
   height: auto;
   margin-left: 25%;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+
+.gif1 {
+  justify-content: space-around; 
 }
 
 figcaption#bateria {
   background-color: rgba(255, 255, 255, 0.5);
   width: 91%;
-  margin: 1% 0% 0% -20%;
+  margin: 1% 0% 2% -20%;
 }
 
 figcaption#bateria p {
@@ -50,7 +55,7 @@ figcaption#bateria h1 {
 }
 
 h1#titulo {
-  margin-top:16.0pt;
+  margin-top:18.0pt;
   margin-right:0px;
   margin-bottom:20px;
   margin-left:40px;
