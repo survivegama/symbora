@@ -15,6 +15,7 @@ body {
     color: rgba(0, 0, 0, 1);
     display: flex;
     flex-direction: column;
+    justify-content: stretch;
     min-height: 100%;
     padding: 0%;
 }
@@ -116,9 +117,10 @@ header#cabecalho img#header-3 {
 
 nav#menu {
     display: flex;
+
     height: 120px;
     background-color: #FF9034;
-    justify-content: center;
+    justify-content: stretch;
     align-items: center;
 }
 
