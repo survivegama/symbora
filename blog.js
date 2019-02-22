@@ -64,7 +64,7 @@ function writeDetails() {
 if(valor == '' || undefined){
     window.open("./downloads/CronogramaCarnaval.pdf", "minhaJanela");
 }
-alert(valor);
+
 
 switch(valor) {
     case '1':
