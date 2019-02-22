@@ -31,6 +31,7 @@ div#interface {
     background-color: white;
     margin: 0px auto 0px auto;
     padding: 30px 10px 10px 10px;
+    justify-content: flex-end;
 }
 
 p {
@@ -95,25 +96,25 @@ header#cabecalho {
     height: 300px;
     width: auto;
     background-color: white;
+    justify-content: flex-end;
 }
 
 header#cabecalho img#header-1 {
     max-width: 25%;
     height: auto;
     align-self: flex-start;
+    margin-left: 2px
 }
 
 header#cabecalho img#header-2 {
-
     width: 648px;
-
     align-self: center;
 }
 
 header#cabecalho img#header-3 {
-    align-self: flex-end;
     max-width: 25%;
     height: auto;
+    align-self: flex-end;
 }
 
 /* Formatação do Menu */
@@ -125,6 +126,7 @@ nav#menu {
     background-color: #FF9034;
     justify-content: space-around;
     align-items: center;
+    justify-content: flex-end;
 }
 
 nav#menu ul{
@@ -315,7 +317,7 @@ figure.foto-legenda h1 {
     font-weight: bold;
     padding-top: 30px;
     padding-left: 80px;
-    color:white; 
+    color:white;
 }
 
 
@@ -323,7 +325,7 @@ figure.foto-legenda p {
     font-family: 'Roboto';
     font-size: 14pt;
     font-weight: bold;
-    padding-top: 0px; 
+    padding-top: 0px;
     padding-left: 100px;
 }
 
@@ -345,7 +347,6 @@ figure.foto-legenda figcaption {
     height: fit-content;
     box-sizing: border-box;
     transition: opacity 1s;
-
 }
 
 figure.foto-legenda:hover figcaption {
@@ -371,7 +372,6 @@ figure.foto-legenda:hover figcaption {
 figure.linkedin-twitter img {
     width: 35px;
     width: 35px;
-
 }
 
 figure.linkedin-twitter {
@@ -395,23 +395,20 @@ footer#rodape a {
     text-decoration: none;
 }
 
-
-
 footer#rodape div.linediv {
     display: flex;
-    width: 1000px;
-    justify-content: center;
+    width: 100%;
+    /* justify-content: center; */
+    justify-content: flex-end;
     border-top: 3px solid white;
     align-items: center;
-    margin-left: 150px;
+    /* margin-left: 150px; */
     margin-top: 80px;
-
 }
 
 footer#rodape p {
     text-align: center;
     font-weight: bold;
-
 }
 
 footer#rodape img#logoinsta{
@@ -419,17 +416,15 @@ footer#rodape img#logoinsta{
     height: 30px;
 }
 
-
 footer#rodape img#logoface{
     width: 40px;
     height: 30px;
 }
 
 table#tablerodape {
-    margin: -150px 40px 10px 330px;
-    width: 700px;
+    /* margin: -150px 40px 10px 330px; */
+    width: 100%;
     border-spacing: 15px;
-
 }
 
 table#tablerodape th {
@@ -448,7 +443,6 @@ footer#rodape img#footerlogo {
     width: 216px;
     height: 216px;
 }
-
 
 table#tabelaspec caption {
     color: #888888;
