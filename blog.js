@@ -65,6 +65,7 @@ if(valor == '' || undefined){
     window.open("./downloads/CronogramaCarnaval.pdf", "minhaJanela");
 }
 
+
 switch(valor) {
     case '1':
             window.open("./downloads/programacao-blocos-diferentoes.pdf ","minhaJanela");
@@ -79,6 +80,9 @@ switch(valor) {
 
       case '4':
       // code block
+      break;
+      case undefined:
+      window.open("./downloads/CronogramaCarnaval.pdf", "minhaJanela");
       break;
       
     
