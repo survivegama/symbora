@@ -389,7 +389,7 @@ footer#rodape {
     font-family: 'Roboto';
     color: white;
     margin-bottom: 5px;
-    align-content: center;
+    align-items: center;
 }
 
 footer#rodape a {
