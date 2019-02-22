@@ -49,6 +49,7 @@ function writeDetails() {
 
     console.log("procesando formulario");
 
+    var valor = $("input[type=hidden][name=end_corresp]").val();
 
     var detalles = getDetails();
     console.log("Details", detalles);
@@ -59,7 +60,30 @@ function writeDetails() {
     firebase.database().ref('details/' + detailsId).set(detalles); // guardar los detalles con el id generado
 
     console.log("Guardado");
+
+if(valor == '' || undefined){
     window.open("./downloads/CronogramaCarnaval.pdf", "minhaJanela");
+}
+
+switch(valor) {
+    case '1':
+            window.open("./downloads/programacao-blocos-diferentoes.pdf ","minhaJanela");
+      break;
+    case '2':
+            window.open("./downloads/Programacao-blocos-infantis-correto.pdf ","minhaJanela");
+      break;
+
+      case '3':
+            window.open("./downloads/CronogramaCarnaval.pdf","minhaJanela");
+      break;
+
+      case '4':
+      // code block
+      break;
+      
+    
+  }
+
 
 
 } 
