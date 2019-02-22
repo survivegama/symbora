@@ -112,7 +112,7 @@ header#cabecalho img#header-1 {
 }
 
 header#cabecalho img#header-2 {
-    width: 648px;
+    width: 50%;
     align-self: center;
 }
 
@@ -463,4 +463,6 @@ table#tabelaspec caption span {
     color:white;
     text-decoration: none;
 }
+
+
 
