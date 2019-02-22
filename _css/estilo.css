@@ -31,6 +31,7 @@ div#interface {
     background-color: white;
     margin: 0px auto 0px auto;
     padding: 30px 10px 10px 10px;
+    justify-content: flex-end;
 }
 
 p {
@@ -95,25 +96,25 @@ header#cabecalho {
     height: 300px;
     width: auto;
     background-color: white;
+    justify-content: flex-end;
 }
 
 header#cabecalho img#header-1 {
     max-width: 25%;
     height: auto;
     align-self: flex-start;
+    margin-left: 2px
 }
 
 header#cabecalho img#header-2 {
-
     width: 648px;
-
     align-self: center;
 }
 
 header#cabecalho img#header-3 {
-    align-self: flex-end;
     max-width: 25%;
     height: auto;
+    align-self: flex-end;
 }
 
 /* Formatação do Menu */
@@ -138,9 +139,7 @@ nav#menu li {
     text-align: center;
     justify-content: space-between;
     font-family: 'Roboto';
-
 }
-
 
 nav#menu a {
     display: flex;
@@ -170,7 +169,7 @@ nav#menu a:hover {
 }
 
 #interface > aside {
-    flex: 1 0 10%;
+    flex: 1 1 8%;
     order: 2;
     margin-right: 1%;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -273,7 +272,7 @@ button.premio {
     font-weight: bold;
     font-size: 13pt;
     width: 100%;
-    height: auto;
+    height: 3%;
     border-radius: 5px;
 }
 
@@ -315,7 +314,7 @@ figure.foto-legenda h1 {
     font-weight: bold;
     padding-top: 30px;
     padding-left: 80px;
-    color:white; 
+    color:white;
 }
 
 
@@ -323,7 +322,7 @@ figure.foto-legenda p {
     font-family: 'Roboto';
     font-size: 14pt;
     font-weight: bold;
-    padding-top: 0px; 
+    padding-top: 0px;
     padding-left: 100px;
 }
 
@@ -345,7 +344,6 @@ figure.foto-legenda figcaption {
     height: fit-content;
     box-sizing: border-box;
     transition: opacity 1s;
-
 }
 
 figure.foto-legenda:hover figcaption {
@@ -364,14 +362,14 @@ figure.foto-legenda:hover figcaption {
 
 .baixar {
     background-color: green;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    width: 400%;
 }
 
 
 figure.linkedin-twitter img {
     width: 35px;
     width: 35px;
-
 }
 
 figure.linkedin-twitter {
@@ -380,14 +378,17 @@ figure.linkedin-twitter {
 
 
 footer#rodape {
+    display: flex;
+    flex-direction: column;
     clear: both;
     border-top: #cccccc 1px solid;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.8);
     font-family: 'Roboto';
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     align-content: center;
+
 }
 
 footer#rodape a {
@@ -395,23 +396,20 @@ footer#rodape a {
     text-decoration: none;
 }
 
-
-
 footer#rodape div.linediv {
-    display: flex;
-    width: 1000px;
+    align-self: center;
+    width: 50%;
+    /* justify-content: center; */
     justify-content: center;
     border-top: 3px solid white;
     align-items: center;
-    margin-left: 150px;
-    margin-top: 80px;
-
+    margin-top: -20px;
+    
 }
 
 footer#rodape p {
     text-align: center;
     font-weight: bold;
-
 }
 
 footer#rodape img#logoinsta{
@@ -419,17 +417,14 @@ footer#rodape img#logoinsta{
     height: 30px;
 }
 
-
 footer#rodape img#logoface{
     width: 40px;
     height: 30px;
 }
 
 table#tablerodape {
-    margin: -150px 40px 10px 330px;
-    width: 700px;
+    width: 40%;
     border-spacing: 15px;
-
 }
 
 table#tablerodape th {
@@ -443,12 +438,12 @@ table#tablerodape td {
 }
 
 footer#rodape img#footerlogo {
-    position: relative;
-    margin-top: -30px;
-    width: 216px;
-    height: 216px;
+    align-self: center;
+    margin-top: -40px;
+    margin-bottom: -20px;
+    width: 20%;
+    height: auto;
 }
-
 
 table#tabelaspec caption {
     color: #888888;
